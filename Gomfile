@@ -1,0 +1,2 @@
+gom 'github.com/whity/file-utils'
+gom 'gopkg.in/yaml.v2'
