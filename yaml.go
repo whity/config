@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"github.com/whity/file-utils"
+	"github.com/whity/go-file-utils"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
 )

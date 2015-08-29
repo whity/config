@@ -1,2 +1,2 @@
-gom 'github.com/whity/file-utils'
+gom 'github.com/whity/go-file-utils'
 gom 'gopkg.in/yaml.v2'
