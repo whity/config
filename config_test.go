@@ -25,3 +25,18 @@ func TestGet(t *testing.T) {
 		t.Errorf("Get(%q), got: %q, want: %q", key, gotValue, expectedValue)
 	}
 }
+
+func TestGetSubKey(t *testing.T) {
+	// read config file
+	cfg, _ := NewFromYAML("./t/config.yaml")
+
+	// get key
+	key := "key3.key1"
+	expectedValue := "value for key3.key1"
+	gotValue, _ := cfg.Get(key).(string)
+
+	// check
+	if gotValue != expectedValue {
+		t.Errorf("Get(%q), got: %q, want: %q", key, gotValue, expectedValue)
+	}
+}
